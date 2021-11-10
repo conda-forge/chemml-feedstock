@@ -1,5 +1,5 @@
 {% set name = "chemml" %}
-{% set version = "0.8" %}
+{% set version = "1.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/chemml-{{ version }}.tar.gz
-  sha256: 596371425791fec6aab795447e88945ce14fb2bde3f6f6254efd2df1f8835582
+  sha256: 668117750bf2b5335d651480ee79b079d4fdccd378bca1690c8c4e523fe0e640
 
 build:
   number: 0
@@ -49,13 +49,13 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'ChemML is a machine learning and informatics program suite for the chemical and materials sciences.'
+  summary: ChemML is a machine learning and informatics program suite for the chemical and materials sciences.
   description: |
     ChemML is a machine learning and informatics program suite for the
     analysis, mining, and modeling of chemical and materials data.
   doc_url: https://hachmannlab.github.io/chemml/
   dev_url: https://github.com/hachmannlab/chemml
-  
+
 extra:
   recipe-maintainers:
     - jan-janssen
