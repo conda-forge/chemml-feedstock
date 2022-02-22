@@ -1,5 +1,5 @@
 {% set name = "chemml" %}
-{% set version = "1.1" %}
+{% set version = "1.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/chemml-{{ version }}.tar.gz
-  sha256: 311d37d88c2d4289a4b107152450f53164111dbac9aa951f638e01b3398d74c6
+  sha256: 0b0b1614551ed3c9f7510ac12662bbf74b9103a4edfd47163e0c6951e28b1192
 
 build:
   number: 0
