@@ -7,18 +7,18 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/chemml-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/chemml-{{ version }}.tar.gz
   sha256: 0efae4b5b8c730aca058ef87b203914b384ede017449be185221a69635d0885a
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
   run:
     - future
     - python-graphviz
@@ -29,7 +29,7 @@ requirements:
     - numpy
     - openpyxl
     - pandas
-    - python >=3.6
+    - python >={{ python_min }}
     - scikit-learn
     - scipy
     - seaborn
@@ -40,6 +40,8 @@ requirements:
     - openbabel
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - chemml
     - chemml.chem
