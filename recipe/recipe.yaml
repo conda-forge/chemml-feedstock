@@ -38,7 +38,7 @@ requirements:
     - seaborn
     - six
     - tensorflow
-    - wget
+    - python-wget
     - rdkit
     - openbabel
 
